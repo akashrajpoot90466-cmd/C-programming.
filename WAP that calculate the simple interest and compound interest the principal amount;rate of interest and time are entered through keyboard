@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+ float principal,rate,time,simple_int,compound_int,amount;
+ printf("enter value of principal");
+ scanf("%f",&principal);
+ printf("enter value of rate");
+ scanf("%f",&rate);
+ printf("enter value of time");
+ scanf("%f",&time);
+ simple_int = (principal*rate*time);
+ amount =principal*((1+rate/100)*time);
+ compound_int = (amount-principal);
+ printf("%f",simple_int);
+ printf("%f",amount);
+ printf("%f",compound_int);
+ return 0;
+}
