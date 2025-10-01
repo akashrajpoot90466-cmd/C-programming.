@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+ int n,sum_of_nth_numbers;
+ printf("enter value of n");
+ scanf("%d",&n);
+ sum_of_nth_numbers = n/2*(2+(n-1));
+ printf("%d",sum_of_nth_numbers);
+ return 0;
+}
