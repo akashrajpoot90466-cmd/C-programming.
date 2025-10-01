@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+ float phy,che,math,bio,eng,sum,per,total_marks;
+ printf("enter phy marks");
+ scanf("%f",&phy);
+ printf("enter che marks");
+ scanf("%f",&che);
+ printf("enter math marks");
+ scanf("%f",&math);
+ printf("enter bio marks");
+ scanf("%f",&bio);
+ printf("enter eng marks");
+ scanf("%f",&eng);
+ sum = (phy+che+math+bio+eng);
+ total_marks = 500;
+ per = ((sum/total_marks)*100);
+ printf("%f",sum);
+ printf("%.2f",per);
+ //print grades 
+ if(per >= 90){
+ printf("grade = 'A'\n");
+ }
+ else if(per >= 80){
+ printf("grade = 'B'\n");
+ }
+ else if(per >= 60){
+ printf("grade = 'C'\n");
+ }
+ else{
+ printf("grade = 'D'\n");
+ }
+ return 0;
+}
